@@ -1,0 +1,52 @@
+.CustomPage{
+  display: flex;
+  flex-direction: column;
+  background-color: lightgrey;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    height: 100%;
+    background-color: white;
+    position: relative;
+  }
+  .btn-container {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    justify-content: space-between;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+    width: inherit;
+  }
+  .btn {
+    cursor: pointer;
+    display: flex;
+    width: fit-content;
+    height: auto;
+    text-align: center;
+    padding: 20px;
+    background-color: lightgray;
+  }
+  .btn:hover {
+    background-color: grey;
+  }
+  
+  .img{
+    height: 100%;
+    width: 100%;
+  }
+  
+  .abs-btn { 
+    cursor: pointer;
+    position: absolute;
+  }
+  .disabled { 
+    cursor: not-allowed;
+  }
+}
